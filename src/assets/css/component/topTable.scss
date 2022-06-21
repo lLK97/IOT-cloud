@@ -1,0 +1,39 @@
+.bt-top-table{
+    padding: 0 8px;
+    margin: 0 10px;
+    width: 100px;
+    height: 35px;
+    text-transform: none;
+    font-size: 13px;
+    >span{
+        position: relative;
+        top: -3px;
+    }
+    >svg{
+        position: relative;
+        top: 3px;
+    }
+}
+.bt-top-right{
+    background-color: var(--primary-light-blue);
+    color: white;
+    height: 35px;
+    border-radius: 5px;
+    >span{
+        position: relative;
+        top: -3px;
+    }
+    >svg{
+        position: relative;
+        top: 3px;
+    }
+}
+.bt-top{
+    background-color: var(--primary-light-blue);
+    color: white;
+}
+@media all and (max-width: 900px){
+    .bt-top{
+        width: 100%;
+    }
+}

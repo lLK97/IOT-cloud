@@ -1,0 +1,37 @@
+.name-table-alarm{
+    list-style: none;
+    padding: 0;
+    .title{
+        color: var( --primary-light-blue);
+    }
+}
+//ANT TAB, TABLE
+.ant-tabs-tab{
+    margin-right: 2px;
+    margin-left: 0 !important;
+}
+@media all and (max-width: 900px){
+    .top-event-center{
+        .search-box{
+            overflow: hidden;
+            width: 85% !important;
+            .ant-form-item-control-input-content{
+                >li{
+                    flex-wrap: wrap;
+                    .ant-select,.ant-select-selector,  .ant-input,.ant-picker-range,button{
+                        margin-bottom: 10px;
+                        margin-left: 0 !important;
+                        width: 100% !important;
+                        height: 30px;
+                    }
+                    .ant-picker-range{
+                        margin-bottom: 15px;
+                    }
+                    
+                }
+            }
+           
+        }
+    }
+
+}

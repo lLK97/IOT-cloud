@@ -1,0 +1,276 @@
+.member-center{
+    max-width: 490px;
+    margin: 20px auto 0 auto;
+    h3{
+        text-align: center;
+        font-weight: bold;
+    }
+    .inner-member{
+        padding: 20px 28px;
+        margin: 24px 0;
+        background-color: rgba(0,0,0,.04);
+        border-radius: 10px;
+        .wrap-content{
+            display: inline-flex;
+
+            .pro-show{
+                .item{
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    color: #939393;
+                    .title{
+                        font-size: 20px;
+                        font-weight: 700;
+                    }
+                    .title-child{
+                       font-size: 12px;
+                       padding-inline: 7px;
+                        margin-inline: 8px;
+                        font-weight: 700;
+                        color: #20c161;
+                        background-color: #f0fff3;
+                    }
+                }
+            }
+
+            //Button update
+            .btn-update{
+                margin-top: 10px;
+                border-radius: 5px;
+            }
+        }
+       
+    }
+  
+    .progess-list{
+        .inner-progess-list{
+            width: 100%;
+            .item-progess{
+                margin: 0;
+                height:48px;
+                .ant-progress-inner{
+                    background-color: rgba(0, 0, 0, 0.14);
+                }
+                .right{
+                    align-self: center;
+                }
+                    ///LABEL
+                    .text{
+                        font-size:12px;
+                        &--number{
+                            margin-bottom: -5px;
+                            margin-left: 5px;
+                            color: rgba(0,0,0,.38);
+                        }
+                    }
+            }
+
+            .title{
+                font-size: 16px;
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
+
+//BASIC INFOR
+.basic-infor,.date-time{
+    width: fit-content;
+    margin: 20px auto;
+    transform: translateX(-10%);
+}
+
+//DATE TIME
+.date-time{
+    .current-time{
+        .label{
+           color: rgb(255, 102, 0);
+           font-size: 18px;
+           margin-left: 24px;
+           font-weight: bolder;
+        }
+    }
+}
+
+//CHANGE PASSWORD
+.change-password, .global-setting{
+    margin: 0 auto !important;
+    width: fit-content;
+    .inner-change{
+        margin: 20px auto;
+        transform: translateX(-10%);
+        
+    }
+    .display-name-login{
+        .MuiSvgIcon-fontSizeMedium{
+            color: var(--primary-light-blue);
+            transform: translateY(3px);
+            display: none;
+        }
+    }
+}
+.global-setting{
+    margin: 20px auto !important;
+    transform: translateX(-10%);
+}
+
+
+//UPDATE ACCOUNT
+.bread-crumb{
+    padding: 0px 24px;
+    font-size: 13px;
+    >span{
+        opacity: 0.5;
+    }
+}
+.update-account{
+ width: 765px;
+ margin: auto;
+ h3{
+    text-align: center;
+    font-weight: bold;
+}
+}
+
+//UPGRADE ACCOUNT
+.upgradeAccount{
+    overflow-y: scroll;
+    height: calc(100vh - 160px);
+
+    .ant-table{
+        table{
+            min-width: 0 !important;
+        }
+       
+    }
+   .content{
+    margin: 0;
+       .right{
+           margin: 0;
+           .title{
+            font-weight: 700;
+            font-size: 16px;
+            color: rgba(0,0,0,.87);
+            text-align: left;
+            line-height: 24px;
+           margin-bottom: 8px;
+           }
+           .title::before{
+            content: " ";
+            position: relative;
+            top: 2px;
+            display: inline-block;
+            width: 3px;
+            height: 16px;
+            background-color: #0070c0;
+            margin-right: 4px;
+           }
+
+           .get-key{
+               margin-left: auto;
+               .ant-typography{
+                   text-align: right;
+                   a{
+                       color: #1890ff !important;
+                       font-weight: 400;
+                   }
+               }
+           }
+       }
+       .left{
+           padding-left: 10px;
+           .ant-btn-default{
+            background: #40a9ff;
+            color: #fff;
+            width: 100%;
+            margin-top: 26%;
+
+           }
+       
+       }
+   }
+   .table{
+       margin: 0;
+       width: 100%;
+       .title{
+        font-weight: 700;
+        font-size: 16px;
+        color: rgba(0,0,0,.87);
+        text-align: left;
+        line-height: 24px;
+       margin-bottom: 8px;
+       }
+       .title::before{
+        content: " ";
+        position: relative;
+        top: 2px;
+        display: inline-block;
+        width: 3px;
+        height: 16px;
+        background-color: #0070c0;
+        margin-right: 4px;
+       }
+       .ant-table-thead{
+        .ant-table-cell{
+            font-weight: bolder;
+        }
+       }
+       .ant-table-tbody{
+           .ant-table-row:first-child{
+                font-weight: bolder !important;
+           }
+           .ant-table-row:nth-child(3){
+            font-weight: bolder !important;
+        }
+        .ant-table-row:nth-child(6){
+            font-weight: bolder !important;
+        }
+        .ant-table-row:nth-child(8){
+            font-weight: bolder !important;
+        }
+        .ant-table-row:nth-child(11){
+            font-weight: bolder !important;
+        }
+        .ant-table-row:nth-child(14){
+            font-weight: bolder !important;
+        }
+        .ant-table-row{
+            .ant-table-cell:nth-child(2){
+                font-weight: bolder !important;
+            }
+            .ant-table-cell:nth-child(3){
+                font-weight: bolder !important;
+            }
+        }
+       }
+   }
+}
+.ant-pagination{
+    display: none;
+}
+@media all and (max-width: 900px){
+    .inner-member{
+        .btn-update{
+            margin-top: 0;  
+            span{
+                font-size: 8px;
+                line-height: 3;
+            }
+        }
+    }
+    .basic-infor,.date-time{
+        width: 100%;
+        margin: 20px auto;
+        transform: translateX(0);
+    }
+    .change-password, .global-setting{
+        margin: 0 auto !important;
+        width: 100%;
+        transform: translateX(0);
+        .inner-change{
+            margin: 20px auto;
+            width: 100%;
+            transform: translateX(0);
+        }
+    }
+}

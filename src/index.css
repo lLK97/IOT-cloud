@@ -1,13 +1,152 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
-
+a{
+  text-decoration: none;
+  
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+*{
+  font-size: 14px;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol !important;
+}
+ul{
+  /* padding: 0 !important; */
+}
+.dots{
+  color: red;
+}
+/* Login Page */
+.display-name-login{
+  width: 150px !important; 
+  text-align: right;
+}
+.name-large{
+  width: 200px !important; 
+}
+.error{
+  margin-top: -25px;
+}
+/* End Login Page */
+.contain-box{
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+ 
+}
+:root{
+ --primary-dark-blue: #2382bf;
+ --primary-light-text-blue: #9dcfef;
+ --color-hover: #e6f7ff; 
+ --primary-light-blue: #57afe7;
+ --primary-white: #ffffff;
+ --primary-dark: #242424;
+ --bgColor-content: #f0f2f5;
+ --primary-button-none: #ccc;
+ --text-button-table: #bcbcbc;
+ --primary-waring: #ff4d4f;
+}
+/*  PASSWORD FIELD */
+.passWordField{
+  border: 1px solid #d9d9d9;
+}
+/* ConntDown Button */
+.bt-count-down{
+  background-color: var(--primary-button-none) !important;
+}
+.bt-count-down:hover{
+  background-color: var(--primary-button-none) !important;
+  cursor: no-drop;
+}
+.content_wrapper{
+  width: 100vw;
+}
+/* ADJUST MODAL  */
+body{
+  width: 100% !important;
+}
+html{
+  overflow-x: scroll;
+}
+
+/*  scroll style */
+
+ ::-webkit-scrollbar {
+  width: 3px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(199, 199, 199);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+ /* ANT-TABLE */
+ .ant-select{
+   margin-top: 8px;
+ }
+ .ant-table table{
+   min-width: 1360px;
+ }
+ .ant-tabs-nav-list{
+   overflow-x: scroll;
+ }
+ .ant-tabs-nav{
+   margin: 0 !important;
+ }
+
+/* END */
+ /* //MAP */
+ .map-container {
+  height: calc(100vh - 90px);
+  width: 100% !important
+  }
+/* //REMOVE OUTLINE TEXTFIELD LOGIN */
+  .MuiOutlinedInput-notchedOutline{
+    display: none ;
+  }
+
+
+  .name-update-acc{
+    text-align: left;
+  }
+
+  /* //END */
+
+  /* ICON BARS */
+  .icon-bar-show,.icon-bar-close{
+    font-size: 32px !important;
+    height: 32px !important;
+    position: absolute;
+    right: 0;
+    margin: 9px;
+    z-index: 10;
+    cursor: pointer;
+  }
+  @media all and (max-width: 900px){
+    .icon-bar-show{
+      z-index: 100;
+    }
+   
+  }
+  @media all and (min-width: 900px){
+    .icon-bar-show,.icon-bar-close{
+      display: none !important;
+    }
+  }
+
+  .inner-sidebar{
+    background-color: #fff;
+  }
